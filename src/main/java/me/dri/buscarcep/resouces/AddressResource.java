@@ -5,6 +5,7 @@ import me.dri.buscarcep.model.Address;
 import me.dri.buscarcep.services.AddressByViaCepService;
 import me.dri.buscarcep.services.AddressService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,6 +30,6 @@ public class AddressResource {
 
     public ResponseEntity<Address> findByCep(@PathVariable String cep) throws IOException {
         Address address = addressService.findByCep(cep);
-            return ResponseEntity.ok().body(address);
+        return ResponseEntity.ok().body(address);
     }
 }

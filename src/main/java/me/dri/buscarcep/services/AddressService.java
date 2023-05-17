@@ -22,7 +22,7 @@ public class AddressService {
     public Address findByCep(String cep) throws IOException {
         Address address = addressRepository.findByCep(cep);
         if (address == null) {
-            address = addressByViaCepService.getAddressByViaCep(cep);
+            address = addressByViaCepService.getViaCepAddress(cep);
             if (address.getCep() == null) {
                 throw new CepNullContent("Esse cep não foi localizado na nossa base de dados.");
             } else {
@@ -36,17 +36,10 @@ public class AddressService {
         return addressRepository.findAll();
     }
 
-    public void  saveAddressByViaCep(Address address) {
-        addressRepository.save(address);
-    }
 
     public void checkDuplicates(Address address, List<Address> addressList) {
-
         if (!addressList.contains(address)) {
             addressRepository.save(address);
         }
-
     }
-
-
 }
