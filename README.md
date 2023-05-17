@@ -12,5 +12,5 @@ O objeto recuperado da API ViaCEP é persistido no banco de dados para uma futur
 
 # ATUALIZAÇÕES: ⚙
 
-Adicionei um front-end basico para o projeto, ao acessar o endpoint /buscar, é exibido um html com um campo input e um botão
+Adicionei um front-end basico para o projeto, ao acessar o endpoint /buscar, é exibido um html com um campo input e um botão,
 ao inserir o CEP, uma requisição GET é enviada pelo arquivo JS "script.js" e retorna o objeto JSON para as divs especificas.
