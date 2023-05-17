@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar CEP</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" type="image/png" href="2288494.png">
+
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <label for="cepText">Digite seu CEP:</label>
+            <input type="text" id="inputCep">
+        </div>
+
+        <button type="button" id="buttonCep" onclick="buscarCep()">Buscar</button>
+        <div id="errorText" class="error-text"></div>
+
+        <div class="result-container">
+            <div class="result-row">
+                <label for="logradouro" class="result-label">Logradouro/Name:</label>
+                <div id="logradouro"></div>
+            </div>
+
+            <div class="result-row">
+                <label for="bairro" class="result-label">Bairro:</label>
+                <div id="bairro"></div>
+            </div>
+
+            <div class="result-row">
+                <label for="localidade" class="result-label">Localidade:</label>
+                <div id="localidade"></div>
+            </div>
+
+            <div class="result-row">
+                <label for="cep" class="result-label">CEP:</label>
+                <div id="cep"></div>
+            </div>
+
+    
+        </div>
+    </div>
+
+    
+
+</body>
+</html>
