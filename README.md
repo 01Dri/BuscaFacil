@@ -10,4 +10,7 @@ não esteja no banco de dados, é chamado o metodo "getViaCepAddress", 𝘀𝘂�
 após isso é salvo em memoria o objeto retornado em 𝐉𝐒𝐎𝐍 na entidade Address e exibida no endpoint atual "/buscarcep/{cep}" 
 O objeto recuperado da API ViaCEP é persistido no banco de dados para uma futura requisição.
 
+# ATUALIZAÇÕES: ⚙
 
+Adicionei um front-end basico para o projeto, ao acessar o endpoint /buscar, é exibido um html com um campo input e um botão
+ao inserir o CEP, uma requisição GET é enviada pelo arquivo JS "script.js" e retorna o objeto JSON para as divs especificas.
