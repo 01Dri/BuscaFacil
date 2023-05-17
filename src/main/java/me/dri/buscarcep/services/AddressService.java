@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
+import java.util.List;
 
 @Service
 public class AddressService {
@@ -25,15 +26,26 @@ public class AddressService {
             if (address.getCep() == null) {
                 throw new CepNullContent("Esse cep não foi localizado na nossa base de dados.");
             } else {
-                saveAddressByViaCep(address);
-                return address;
+               checkDuplicates(address, getAddressList());
             }
         }
         return address;
     }
 
+    public List<Address> getAddressList() {
+        return addressRepository.findAll();
+    }
+
     public void  saveAddressByViaCep(Address address) {
         addressRepository.save(address);
+    }
+
+    public void checkDuplicates(Address address, List<Address> addressList) {
+
+        if (!addressList.contains(address)) {
+            addressRepository.save(address);
+        }
+
     }
 
 
