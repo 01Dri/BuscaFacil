@@ -14,3 +14,9 @@ O objeto recuperado da API ViaCEP é persistido no banco de dados para uma futur
 
 Adicionei um front-end basico para o projeto, ao acessar o endpoint /buscar, é exibido um html com um campo input e um botão,
 ao inserir o CEP uma requisição GET é enviada pelo arquivo JS "script.js" e retorna o objeto JSON para as divs especificas.
+
+
+# TELA INICIAL (ENDPOINT /BUSCAR)
+
+![image](https://github.com/01Dri/buscar-cep/assets/124473653/cdfb00f8-5357-4ed3-bcf2-68aa2e1f0fbe)
+
