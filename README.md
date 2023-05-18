@@ -17,9 +17,9 @@ ao inserir o CEP uma requisição GET é enviada pelo arquivo JS "script.js" e r
 
 
 # TELA INICIAL (ENDPOINT /BUSCAR)
-![image](https://github.com/01Dri/buscar-cep/assets/124473653/a2e24bde-c70c-4e34-bb2c-49d50dc85494)
+![image](https://github.com/01Dri/buscar-cep/assets/124473653/86adb7ea-92d5-4648-8ac6-45978da6f5f3)
 
 
 # OBJETO RETORNANDO EM JSON TRATADO EM DIVS NO FRONT 
-![image](https://github.com/01Dri/buscar-cep/assets/124473653/2828c9c2-0ce7-4462-b2a9-fb0cf754535f)
+![image](https://github.com/01Dri/buscar-cep/assets/124473653/3b913c4a-859d-4d8f-a20d-7d8f6c3e89d0)
 
