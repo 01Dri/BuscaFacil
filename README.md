@@ -23,3 +23,6 @@ ao inserir o CEP uma requisição GET é enviada pelo arquivo JS "script.js" e r
 # OBJETO RETORNANDO EM JSON TRATADO EM DIVS NO FRONT 
 ![image](https://github.com/01Dri/buscar-cep/assets/124473653/3b913c4a-859d-4d8f-a20d-7d8f6c3e89d0)
 
+# ENDPOINT QUE RETORNA JSON (/buscarcep{cep}
+![image](https://github.com/01Dri/buscar-cep/assets/124473653/57c8f9ee-ffc4-4bcd-8f9a-b65151145d94)
+
