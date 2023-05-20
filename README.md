@@ -2,7 +2,7 @@
 Ao fazer uma consulta 𝐆𝐄𝐓 no endpoint /buscarcep/{cep} é retornado em formato 𝐉𝐒𝐎𝐍 as informações do CEP.
 
 # BASE DE DADOS 🎲
-Todas as informações da entidade "Address" é persistida no banco de dados 𝐌𝐎𝐍𝐆𝐎𝐃𝐁 (𝐍𝐎𝐒𝐐𝐋)
+Todas as informações do objeto "Address" é persistida no banco de dados 𝐌𝐎𝐍𝐆𝐎𝐃𝐁 (𝐍𝐎𝐒𝐐𝐋)
 
 # LOGICA APLICADA 💡 
 O codigo fornece acesso ao banco de dados recuperando os CEPs disponiveis, caso o CEP informado pelo usuario
@@ -10,4 +10,18 @@ não esteja no banco de dados, é chamado o metodo "getViaCepAddress", 𝘀𝘂�
 após isso é salvo em memoria o objeto retornado em 𝐉𝐒𝐎𝐍 na entidade Address e exibida no endpoint atual "/buscarcep/{cep}" 
 O objeto recuperado da API ViaCEP é persistido no banco de dados para uma futura requisição.
 
+# ATUALIZAÇÕES: ⚙
+
+Adicionei um front-end basico para o projeto, ao acessar o endpoint /buscar, é exibido um html com um campo input e um botão,
+ao inserir o CEP uma requisição GET é enviada pelo arquivo JS "script.js" e retorna o objeto JSON para as divs especificas.
+
+
+# TELA INICIAL (ENDPOINT /BUSCAR) 💻
+![image](https://github.com/01Dri/buscar-cep/assets/124473653/86adb7ea-92d5-4648-8ac6-45978da6f5f3)
+
+# OBJETO RETORNADO EM JSON TRATADO EM DIVS NO FRONT 🌐
+![image](https://github.com/01Dri/buscar-cep/assets/124473653/3b913c4a-859d-4d8f-a20d-7d8f6c3e89d0)
+
+# ENDPOINT QUE RETORNA JSON (/buscarcep{cep} 
+![image](https://github.com/01Dri/buscar-cep/assets/124473653/57c8f9ee-ffc4-4bcd-8f9a-b65151145d94)
 
