@@ -29,8 +29,10 @@ function buscarCep() {
 
     })
     .catch(error => {
+
         var errorText = document.getElementById("errorText");
         errorText.textContent = "CEP inválido, por favor digite novamente.";
+
     });
 }
 
